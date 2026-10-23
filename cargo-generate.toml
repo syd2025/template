@@ -6,3 +6,6 @@ exclude = [
   "cliff.toml",
   ".github/workflows/build.yml",
 ]
+
+[hooks]
+pre = ["pre-hook.rhai"]
