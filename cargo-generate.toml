@@ -1,0 +1,8 @@
+[template]
+# cliff.toml contains git-cliff (Tera) templates and .github/workflows/build.yml
+# contains GitHub Actions `${{ ... }}` expressions. Both use brace syntax that
+# conflicts with Liquid, so cargo-generate must not attempt substitution there.
+exclude = [
+  "cliff.toml",
+  ".github/workflows/build.yml",
+]
